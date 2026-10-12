@@ -1,12 +1,11 @@
 name: ZARN SAST
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  schedule:
-    - cron: '28 23 * * 1'
 
 jobs:
   zarn:
